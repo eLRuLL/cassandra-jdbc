@@ -543,16 +543,16 @@ public class HandleObjects
 	private static Float objectToFLOAT(Class<? extends Object> objectClass, Object object) 
 	{
 		// Strings should always work
-        if (objectClass == String.class) return new Float((String) object);
-        else if (objectClass == Number.class) return new Float(((Number) object).floatValue());
+        if (String.class.isAssignableFrom(objectClass)) return new Float((String) object);
+        else if (Number.class.isAssignableFrom(objectClass)) return new Float(((Number) object).floatValue());
         else return null; // this should not happen
     }
 
 	private static Double objectToDOUBLE(Class<? extends Object> objectClass, Object object) 
 	{
 		// Strings should always work
-        if (objectClass == String.class) return new Double((String) object);
-        else if (objectClass == Number.class) return new Double(((Number) object).doubleValue());
+        if (String.class.isAssignableFrom(objectClass)) return new Double((String) object);
+        else if (Number.class.isAssignableFrom(objectClass)) return new Double(((Number) object).doubleValue());
         else return null; // this should not happen
 	}
 }

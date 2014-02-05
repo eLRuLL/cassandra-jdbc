@@ -45,8 +45,8 @@ import org.junit.Test;
 
 public class JdbcRegressionTest
 {
-    private static final String HOST = System.getProperty("host", ConnectionDetails.getHost());
-    private static final int PORT = Integer.parseInt(System.getProperty("port", ConnectionDetails.getPort()+""));
+    private static final String HOST = "bdsandbox8";//System.getProperty("host", ConnectionDetails.getHost());
+    private static final int PORT = 9160;//Integer.parseInt(System.getProperty("port", ConnectionDetails.getPort()+""));
     private static final String KEYSPACE = "testks";
     private static final String TABLE = "regressiontest";
 //    private static final String CQLV3 = "3.0.0";

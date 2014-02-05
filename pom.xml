@@ -30,7 +30,7 @@ under the License.
 
   <groupId>org.apache-extras.cassandra-jdbc</groupId>
   <artifactId>cassandra-jdbc</artifactId>
-  <version>1.2.5</version>
+  <version>1.2.5-JS</version>
 
   <name>JDBC driver for Cassandra/CQL</name>
   <description>A JDBC-compliant driver for Cassandra using CQL.</description>
@@ -233,6 +233,9 @@ under the License.
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-surefire-plugin</artifactId>
                     <version>2.14</version>
+                    <configuration>
+                        <skipTests>true</skipTests>
+                    </configuration>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
