@@ -33,4 +33,10 @@ bin/
 # directory but want to ignore its content. Example: to keep the 
 # "logs" dir do: "touch logs/.gitignore"
 #
-!.gitignore
+
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
